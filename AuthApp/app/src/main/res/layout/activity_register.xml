@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+        <!-- Campo Usuário -->
+
+        <!-- Campo E-mail -->
+        <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Usuário"
+                android:inputType="textPersonName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="60dp"/>
+        <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Salvar cadastro"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@id/edtPass"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+                android:textColor="#5c0c8c"/>
+        <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Senha (mín. 6)"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/edtEmail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+        <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="4dp"
+                app:layout_constraintTop_toBottomOf="@id/edtUser"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+
+        <!-- Campo Senha -->
+
+        <!-- Botão Salvar -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
