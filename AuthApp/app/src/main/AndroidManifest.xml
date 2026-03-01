@@ -15,9 +15,9 @@
         <activity android:name=".LoginActivity" />
         <activity
                 android:name=".SplashActivity"
-                android:theme="@style/Theme.AuthAppNoAction"
+                android:theme="@style/Theme.AuthApp.Splash"
                 android:exported="true"
-                android:label="LoginAPP">
+                android:label="Auth APP">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
